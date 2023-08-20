@@ -1,8 +1,6 @@
 function [ypred,rmse, model] = Craving_Prediction(data,ytrue, repnum, cvnum, titlename)
 % Perform cross-validation on craving prediction using RVM
 %   
-
-data = zscore(data, 0, 2);
 y = ytrue';
 N = length(ytrue);
             
